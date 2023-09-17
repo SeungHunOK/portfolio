@@ -1,0 +1,76 @@
+/** 모든 페이지에서 사용될 공통적인 내용을 정의 */
+
+/*----------------------------------------------------
+* 공통
+*----------------------------------------------------*/
+* {
+  font-family: "Noto Sans KR";
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header, main, footer 영역 안에서 내용의 넓이를 제한하는 박스 */
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*----------------------------------------------------
+* 상단영역
+*----------------------------------------------------*/
+
+.header {
+  background-color: #656569;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+}
+.logo {
+  display: flex;
+  margin: 20px 40px;
+}
+
+.pd-logo:hover {
+  background-color: #dddddd;
+}
+
+.categori {
+  display: flex; 
+  margin: 0px 50px;
+  font-size: 18px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.categori:hover {
+  background-color: #dddddd;
+  color: #ffffff;
+}
+
+.second-categori {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 0 10px;
+}
+.icon:hover {
+  background-color: #dddddd;
+  color: #ffffff;
+}
+
+.main,
+footer {
+  margin: 98px 0px;
+  background-color: #ff00ff;
+  border: 20px dotted #00f0f0;
+  height: 9000px;
+}
